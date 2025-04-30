@@ -8,6 +8,15 @@ files:
   - type: codewithgpu
     cg_path: sd-unet/flux1-dev-unet-fp8-e4m3fn.safetensors
     target: /root/autodl-tmp/models/unet/
+  - type: codewithgpu
+    cg_path: nahz202/FLUX-Tools-ControlNet/flux1-fill-dev-fp8.safetensors
+    target: /root/autodl-tmp/models/unet/
+  - type: codewithgpu
+    cg_path: nahz202/FLUX-Tools-ControlNet/flux1-redux-dev.safetensors
+    target: /root/autodl-tmp/models/style_models/
+  - type: codewithgpu
+    cg_path: nahz202/Flex.1-alpha-Redux/flex1_redux_siglip2_512.safetensors
+    target: /root/autodl-tmp/models/style_models/
 
   # vae
   - type: codewithgpu
@@ -22,5 +31,9 @@ files:
     cg_path: stable-diffusion-3-medium/clip_l.safetensors
     target: /root/autodl-tmp/models/clip/
   - type: codewithgpu
-    cg_path: stable-diffusion-3-medium/clip_g.safetensors
-    target: /root/autodl-tmp/models/clip/
+    cg_path: nahz202/FLUX-Tools-ControlNet/sigclip_vision_patch14_384.safetensors
+    target: /root/autodl-tmp/models/clip_vision/
+  # lora
+  - type: codewithgpu
+    cg_path: nahz202/ACE_plus/comfyui_subject_lora16.safetensors
+    target: /root/autodl-tmp/models/loras/
